@@ -1,0 +1,831 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Renderer">
+      <UniqueIdentifier>{ccddd5df-ef71-4371-ae24-9d76ab126450}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{5f86460a-45ab-439c-87ac-e92b913fe28c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Time">
+      <UniqueIdentifier>{a64d1b3d-21af-49a0-8105-f64c9b27f447}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input">
+      <UniqueIdentifier>{5e1cf593-8802-4659-a16e-96b9ebb5aaae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sound">
+      <UniqueIdentifier>{379801b0-7d99-41ea-a041-ca17f88a1cb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilitity">
+      <UniqueIdentifier>{f961c345-4ec3-44b9-8088-c784005ce117}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Console">
+      <UniqueIdentifier>{aef2d40d-76dc-4f80-8dc9-a896346171b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Camera">
+      <UniqueIdentifier>{fc95fcce-fe0d-437f-b172-bd90d7ba2be3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Physics">
+      <UniqueIdentifier>{4275219a-7f48-4191-97c4-0c7a7ec9fb06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3DXExporter">
+      <UniqueIdentifier>{d9cb1ae9-6abe-4ec2-a59a-3d10bc2412ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Animation2D">
+      <UniqueIdentifier>{909eb241-e6f3-4138-9185-acdb09f7b1fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Animation2D\Spine">
+      <UniqueIdentifier>{ebb8b1ff-67b8-495f-a839-d04fbdbdac19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Clock">
+      <UniqueIdentifier>{e5b230fb-ea34-489c-bb70-a22280cbe1c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Thread">
+      <UniqueIdentifier>{64654b18-5eb4-4009-9086-b872afa0f89e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Memory">
+      <UniqueIdentifier>{967689c8-b8a9-44dd-ad42-ee2ff68ea976}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TinyXML">
+      <UniqueIdentifier>{6cbbfaf6-22b5-412a-8103-36876d095a89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Network">
+      <UniqueIdentifier>{c7b66d9c-134b-4c87-8a7f-afea4a7480ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EventSystem">
+      <UniqueIdentifier>{6bee1a46-da67-4f65-ae9b-21bd4ebfa330}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI">
+      <UniqueIdentifier>{79702144-8d03-41ae-9f03-2ae2d46ead53}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Renderer\OpenGLRenderer.hpp">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Vector2.hpp">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\MathUtils.hpp">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Dics2D.hpp">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Math2D.hpp">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\AABB2D.hpp">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\LineSegment2D.hpp">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Texture.hpp">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\RGBA.hpp">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\InputSystem.hpp">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\AnimatedTexture.hpp">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Sound\SoundSystem.hpp">
+      <Filter>Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="Sound\Sound.hpp">
+      <Filter>Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="Console\Console.hpp">
+      <Filter>Console</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Vector3.hpp">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\AABB3D.hpp">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Dics3D.hpp">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\LineSegment3D.hpp">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Math3D.hpp">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Time\Time.hpp">
+      <Filter>Time</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Vector4.hpp">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Matrix4x4.hpp">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\EulerAngles.hpp">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera\Camera3D.hpp">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\IntVector3.hpp">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Noise.hpp">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\IntVector2.hpp">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\Utility.hpp">
+      <Filter>Utilitity</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\glext.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera\RayCast3D.hpp">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\geometry.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\DebugShape.hpp">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\DebugShapeSystem.hpp">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Physics\ParticleSystem.hpp">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Physics\Particle.hpp">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Physics\YoYoParticleModel.hpp">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Fonts.hpp">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Character.hpp">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Physics\ExplosionParticle.hpp">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Physics\FountainParticle.hpp">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Physics\SpinParticle.hpp">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Physics\CollisionDetection.hpp">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Console\console_command.hpp">
+      <Filter>Console</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Shader.hpp">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\GLShader.hpp">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\GLMaterial.hpp">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\GLMesh.hpp">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\GLMeshRenderer.hpp">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Physics\StringSystem.hpp">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Light.hpp">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\BinaryBufferParser.hpp">
+      <Filter>Utilitity</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\BinaryFileParser.hpp">
+      <Filter>Utilitity</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\BinaryBufferBuilder.hpp">
+      <Filter>Utilitity</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\xmlParser.h">
+      <Filter>Utilitity</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation2D\Spine-c\include\spine\Animation.h">
+      <Filter>Animation2D\Spine</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation2D\Spine-c\include\spine\AnimationState.h">
+      <Filter>Animation2D\Spine</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation2D\Spine-c\include\spine\AnimationStateData.h">
+      <Filter>Animation2D\Spine</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation2D\Spine-c\include\spine\Atlas.h">
+      <Filter>Animation2D\Spine</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation2D\Spine-c\include\spine\AtlasAttachmentLoader.h">
+      <Filter>Animation2D\Spine</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation2D\Spine-c\include\spine\Attachment.h">
+      <Filter>Animation2D\Spine</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation2D\Spine-c\include\spine\AttachmentLoader.h">
+      <Filter>Animation2D\Spine</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation2D\Spine-c\include\spine\Bone.h">
+      <Filter>Animation2D\Spine</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation2D\Spine-c\include\spine\BoneData.h">
+      <Filter>Animation2D\Spine</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation2D\Spine-c\include\spine\BoundingBoxAttachment.h">
+      <Filter>Animation2D\Spine</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation2D\Spine-c\include\spine\Event.h">
+      <Filter>Animation2D\Spine</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation2D\Spine-c\include\spine\EventData.h">
+      <Filter>Animation2D\Spine</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation2D\Spine-c\include\spine\extension.h">
+      <Filter>Animation2D\Spine</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation2D\Spine-c\include\spine\IkConstraint.h">
+      <Filter>Animation2D\Spine</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation2D\Spine-c\include\spine\IkConstraintData.h">
+      <Filter>Animation2D\Spine</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation2D\Spine-c\include\spine\MeshAttachment.h">
+      <Filter>Animation2D\Spine</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation2D\Spine-c\include\spine\RegionAttachment.h">
+      <Filter>Animation2D\Spine</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation2D\Spine-c\include\spine\Skeleton.h">
+      <Filter>Animation2D\Spine</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation2D\Spine-c\include\spine\SkeletonBounds.h">
+      <Filter>Animation2D\Spine</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation2D\Spine-c\include\spine\SkeletonData.h">
+      <Filter>Animation2D\Spine</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation2D\Spine-c\include\spine\SkeletonJson.h">
+      <Filter>Animation2D\Spine</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation2D\Spine-c\include\spine\Skin.h">
+      <Filter>Animation2D\Spine</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation2D\Spine-c\include\spine\SkinnedMeshAttachment.h">
+      <Filter>Animation2D\Spine</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation2D\Spine-c\include\spine\Slot.h">
+      <Filter>Animation2D\Spine</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation2D\Spine-c\include\spine\SlotData.h">
+      <Filter>Animation2D\Spine</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation2D\Spine-c\include\spine\spine.h">
+      <Filter>Animation2D\Spine</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation2D\Spine-c\src\spine\Json.h">
+      <Filter>Animation2D\Spine</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation2D\Skeleton2DLoader.hpp">
+      <Filter>Animation2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation2D\Skeleton2DData.hpp">
+      <Filter>Animation2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation2D\Attachment2DLoader.hpp">
+      <Filter>Animation2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation2D\Animation2DHeaders.hpp">
+      <Filter>Animation2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation2D\SpineExtension.hpp">
+      <Filter>Animation2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Clock\Clock.hpp">
+      <Filter>Clock</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation2D\Skeleton2D.hpp">
+      <Filter>Animation2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation2D\Skeleton2DAnimation.hpp">
+      <Filter>Animation2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Clock\ProfileSection.hpp">
+      <Filter>Clock</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread\Thread.hpp">
+      <Filter>Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread\ThreadSafeQueue.hpp">
+      <Filter>Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread\Lock.hpp">
+      <Filter>Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread\Command.hpp">
+      <Filter>Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread\TextHelper.hpp">
+      <Filter>Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread\JobManager.hpp">
+      <Filter>Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation2D\Atlas2D.hpp">
+      <Filter>Animation2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread\JobGroup.hpp">
+      <Filter>Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory\SignPostAllocator.hpp">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory\OverrideNew.hpp">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="TinyXML\tinystr.h">
+      <Filter>TinyXML</Filter>
+    </ClInclude>
+    <ClInclude Include="TinyXML\tinyxml.h">
+      <Filter>TinyXML</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Client.hpp">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Server.hpp">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\NetAddress.hpp">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\NetPacket.hpp">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\NetPacketQueue.hpp">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\NetSession.hpp">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\NetSystem.hpp">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\UDPSocket.hpp">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\NetMessage.hpp">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\NetConnection.hpp">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\BitArray.hpp">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="EventSystem\EventSystem.hpp">
+      <Filter>EventSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="EventSystem\NamedProperties.hpp">
+      <Filter>EventSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="EventSystem\KeyFrameSequence.hpp">
+      <Filter>EventSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\BaseWidget.hpp">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\UISystem.hpp">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Button.hpp">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\BaseWidget2.hpp">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Button2.hpp">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\RectButton.hpp">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\WidgetStyle.hpp">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Label.hpp">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\EditableLabel.hpp">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\GroupWidget.hpp">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\ProgressBar.hpp">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\CheckBox.hpp">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\SliderWidget.hpp">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\DropdownWidget.hpp">
+      <Filter>UI</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Math\MathUtils.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Vector2.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Disc2D.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Math2D.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\AABB2D.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\LineSegment2D.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\stb_image.c">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Texture.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\RGBA.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Input\InputSystem.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\AnimatedTexture.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Sound\SoundSystem.cpp">
+      <Filter>Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="Sound\Sound.cpp">
+      <Filter>Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="Console\Console.cpp">
+      <Filter>Console</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Vector3.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\AABB3D.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Disc3D.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\LineSegment3D.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Math3D.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Time\Time.cpp">
+      <Filter>Time</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Vector4.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Matrix4x4.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\EulerAngles.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera\Camera3D.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Noise.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\IntVector2.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\Utility.cpp">
+      <Filter>Utilitity</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera\RayCast3D.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\OpenGLRenderer.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\DebugShape.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\DebugShapeSystem.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Physics\PariticleSystem.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Physics\Particle.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Physics\YoYoParticleModel.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Fonts.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Character.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Physics\ExplosionParticle.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Physics\FountainParticle.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Physics\SpinParticle.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Console\console_command.cpp">
+      <Filter>Console</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Shader.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\GLShader.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\GLMaterial.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\GLMesh.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\GLMeshRenderer.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Physics\StringSystem.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Light.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\BinaryBufferParser.cpp">
+      <Filter>Utilitity</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\BinaryFileParser.cpp">
+      <Filter>Utilitity</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\BinaryBufferBuilder.cpp">
+      <Filter>Utilitity</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\xmlParser.cpp">
+      <Filter>Utilitity</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation2D\Spine-c\src\spine\Animation.c">
+      <Filter>Animation2D\Spine</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation2D\Spine-c\src\spine\AnimationState.c">
+      <Filter>Animation2D\Spine</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation2D\Spine-c\src\spine\AnimationStateData.c">
+      <Filter>Animation2D\Spine</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation2D\Spine-c\src\spine\Atlas.c">
+      <Filter>Animation2D\Spine</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation2D\Spine-c\src\spine\AtlasAttachmentLoader.c">
+      <Filter>Animation2D\Spine</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation2D\Spine-c\src\spine\Attachment.c">
+      <Filter>Animation2D\Spine</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation2D\Spine-c\src\spine\AttachmentLoader.c">
+      <Filter>Animation2D\Spine</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation2D\Spine-c\src\spine\Bone.c">
+      <Filter>Animation2D\Spine</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation2D\Spine-c\src\spine\BoneData.c">
+      <Filter>Animation2D\Spine</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation2D\Spine-c\src\spine\BoundingBoxAttachment.c">
+      <Filter>Animation2D\Spine</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation2D\Spine-c\src\spine\Event.c">
+      <Filter>Animation2D\Spine</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation2D\Spine-c\src\spine\EventData.c">
+      <Filter>Animation2D\Spine</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation2D\Spine-c\src\spine\extension.c">
+      <Filter>Animation2D\Spine</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation2D\Spine-c\src\spine\IkConstraint.c">
+      <Filter>Animation2D\Spine</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation2D\Spine-c\src\spine\IkConstraintData.c">
+      <Filter>Animation2D\Spine</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation2D\Spine-c\src\spine\Json.c">
+      <Filter>Animation2D\Spine</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation2D\Spine-c\src\spine\MeshAttachment.c">
+      <Filter>Animation2D\Spine</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation2D\Spine-c\src\spine\RegionAttachment.c">
+      <Filter>Animation2D\Spine</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation2D\Spine-c\src\spine\Skeleton.c">
+      <Filter>Animation2D\Spine</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation2D\Spine-c\src\spine\SkeletonBounds.c">
+      <Filter>Animation2D\Spine</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation2D\Spine-c\src\spine\SkeletonData.c">
+      <Filter>Animation2D\Spine</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation2D\Spine-c\src\spine\SkeletonJson.c">
+      <Filter>Animation2D\Spine</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation2D\Spine-c\src\spine\Skin.c">
+      <Filter>Animation2D\Spine</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation2D\Spine-c\src\spine\SkinnedMeshAttachment.c">
+      <Filter>Animation2D\Spine</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation2D\Spine-c\src\spine\Slot.c">
+      <Filter>Animation2D\Spine</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation2D\Spine-c\src\spine\SlotData.c">
+      <Filter>Animation2D\Spine</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation2D\Skeleton2DLoader.cpp">
+      <Filter>Animation2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation2D\Skeleton2DData.cpp">
+      <Filter>Animation2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation2D\Attachment2DLoader.cpp">
+      <Filter>Animation2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation2D\SpineExtension.cpp">
+      <Filter>Animation2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Clock\Clock.cpp">
+      <Filter>Clock</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation2D\Skeleton2D.cpp">
+      <Filter>Animation2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation2D\Skeleton2DAnimation.cpp">
+      <Filter>Animation2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Clock\ProfileSection.cpp">
+      <Filter>Clock</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread\Thread.cpp">
+      <Filter>Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread\Command.cpp">
+      <Filter>Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread\TextHelper.cpp">
+      <Filter>Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread\JobManager.cpp">
+      <Filter>Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation2D\Atlas2D.cpp">
+      <Filter>Animation2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread\JobGroup.cpp">
+      <Filter>Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory\OverrideNew.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory\SignPostAllocator.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="TinyXML\tinystr.cpp">
+      <Filter>TinyXML</Filter>
+    </ClCompile>
+    <ClCompile Include="TinyXML\tinyxml.cpp">
+      <Filter>TinyXML</Filter>
+    </ClCompile>
+    <ClCompile Include="TinyXML\tinyxmlerror.cpp">
+      <Filter>TinyXML</Filter>
+    </ClCompile>
+    <ClCompile Include="TinyXML\tinyxmlparser.cpp">
+      <Filter>TinyXML</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\Client.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\Server.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\NetSession.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\NetSystem.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\UDPSocket.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\NetPacket.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\NetPacketQueue.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\NetMessage.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\NetConnection.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\BitArray.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="EventSystem\EventSystem.cpp">
+      <Filter>EventSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="EventSystem\NamedProperties.cpp">
+      <Filter>EventSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="EventSystem\KeyFrameSequence.cpp">
+      <Filter>EventSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\BaseWidget.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\UISystem.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Button.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\BaseWidget2.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Button2.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\RectButton.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\WidgetStyle.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\GroupWidget.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Label.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\EditableLabel.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\ProgressBar.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\CheckBox.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\SliderWidget.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\DropdownWidget.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

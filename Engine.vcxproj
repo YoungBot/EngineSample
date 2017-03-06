@@ -1,0 +1,410 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugInline|Win32">
+      <Configuration>DebugInline</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A92BC556-C5DA-4CC3-89D1-B3C85533E915}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Engine</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugInline|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugInline|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)..\Temporary\$(ProjectName)_$(Platform)_$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugInline|Win32'">
+    <OutDir>$(SolutionDir)..\Temporary\$(ProjectName)_$(Platform)_$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IntDir>$(SolutionDir)..\Temporary\$(ProjectName)_$(Platform)_$(Configuration)\</IntDir>
+    <IncludePath>D:\Perforce\Personal\RYang\ProjectCode\Engine;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugInline|Win32'">
+    <IntDir>$(SolutionDir)..\Temporary\$(ProjectName)_$(Platform)_$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)..\Temporary\$(ProjectName)_$(Platform)_$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IntDir>$(SolutionDir)..\Temporary\$(ProjectName)_$(Platform)_$(Configuration)\</IntDir>
+    <IncludePath>$(SolutionDir)../../../;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(projectDir)../;$(projectDir)/Sound/cricket-1.4.2/inc/;%(AdditionalIncludeDirectories)$(ADSK_3DSMAX_SDK_2014)\include;$(ADSK_3DSMAX_SDK_2014)\include\IGame;$(ProjectDir);$(projectDir)/Animation2D/Spine-c/include/</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;xinput9_1_0.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)/Sound/cricket-1.4.2/lib/win/vs$(VisualStudioVersion)/x86/DebugStatic7/;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugInline|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(projectDir)../;$(projectDir)/Sound/cricket-1.4.2/inc/;%(AdditionalIncludeDirectories)$(ADSK_3DSMAX_SDK_2014)\include;$(ADSK_3DSMAX_SDK_2014)\include\IGame;$(ProjectDir)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;xinput9_1_0.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)/Sound/cricket-1.4.2/lib/win/vs12.0/x86/DebugDynamic7/;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_LIB;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(projectDir)/Sound/cricket-1.4.2/inc/;$(projectDir)../$(ADSK_3DSMAX_SDK_2014)\include;$(ADSK_3DSMAX_SDK_2014)\include\IGame;$(ProjectDir);$(projectDir)/Animation2D/Spine-c/include/</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;xinput9_1_0.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)/Sound/cricket-1.4.2/lib/win/vs$(VisualStudioVersion)/x86/ReleaseStatic7/;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Animation2D\Animation2DHeaders.hpp" />
+    <ClInclude Include="Animation2D\Atlas2D.hpp" />
+    <ClInclude Include="Animation2D\Attachment2DLoader.hpp" />
+    <ClInclude Include="Animation2D\Skeleton2D.hpp" />
+    <ClInclude Include="Animation2D\Skeleton2DAnimation.hpp" />
+    <ClInclude Include="Animation2D\Skeleton2DData.hpp" />
+    <ClInclude Include="Animation2D\Skeleton2DLoader.hpp" />
+    <ClInclude Include="Animation2D\Spine-c\include\spine\Animation.h" />
+    <ClInclude Include="Animation2D\Spine-c\include\spine\AnimationState.h" />
+    <ClInclude Include="Animation2D\Spine-c\include\spine\AnimationStateData.h" />
+    <ClInclude Include="Animation2D\Spine-c\include\spine\Atlas.h" />
+    <ClInclude Include="Animation2D\Spine-c\include\spine\AtlasAttachmentLoader.h" />
+    <ClInclude Include="Animation2D\Spine-c\include\spine\Attachment.h" />
+    <ClInclude Include="Animation2D\Spine-c\include\spine\AttachmentLoader.h" />
+    <ClInclude Include="Animation2D\Spine-c\include\spine\Bone.h" />
+    <ClInclude Include="Animation2D\Spine-c\include\spine\BoneData.h" />
+    <ClInclude Include="Animation2D\Spine-c\include\spine\BoundingBoxAttachment.h" />
+    <ClInclude Include="Animation2D\Spine-c\include\spine\Event.h" />
+    <ClInclude Include="Animation2D\Spine-c\include\spine\EventData.h" />
+    <ClInclude Include="Animation2D\Spine-c\include\spine\extension.h" />
+    <ClInclude Include="Animation2D\Spine-c\include\spine\IkConstraint.h" />
+    <ClInclude Include="Animation2D\Spine-c\include\spine\IkConstraintData.h" />
+    <ClInclude Include="Animation2D\Spine-c\include\spine\MeshAttachment.h" />
+    <ClInclude Include="Animation2D\Spine-c\include\spine\RegionAttachment.h" />
+    <ClInclude Include="Animation2D\Spine-c\include\spine\Skeleton.h" />
+    <ClInclude Include="Animation2D\Spine-c\include\spine\SkeletonBounds.h" />
+    <ClInclude Include="Animation2D\Spine-c\include\spine\SkeletonData.h" />
+    <ClInclude Include="Animation2D\Spine-c\include\spine\SkeletonJson.h" />
+    <ClInclude Include="Animation2D\Spine-c\include\spine\Skin.h" />
+    <ClInclude Include="Animation2D\Spine-c\include\spine\SkinnedMeshAttachment.h" />
+    <ClInclude Include="Animation2D\Spine-c\include\spine\Slot.h" />
+    <ClInclude Include="Animation2D\Spine-c\include\spine\SlotData.h" />
+    <ClInclude Include="Animation2D\Spine-c\include\spine\spine.h" />
+    <ClInclude Include="Animation2D\Spine-c\src\spine\Json.h" />
+    <ClInclude Include="Animation2D\SpineExtension.hpp" />
+    <ClInclude Include="Camera\Camera3D.hpp" />
+    <ClInclude Include="Camera\RayCast3D.hpp" />
+    <ClInclude Include="Clock\Clock.hpp" />
+    <ClInclude Include="Clock\ProfileSection.hpp" />
+    <ClInclude Include="Console\Console.hpp" />
+    <ClInclude Include="Console\console_command.hpp" />
+    <ClInclude Include="EventSystem\EventSystem.hpp" />
+    <ClInclude Include="EventSystem\KeyFrameSequence.hpp" />
+    <ClInclude Include="EventSystem\NamedProperties.hpp" />
+    <ClInclude Include="Input\InputSystem.hpp" />
+    <ClInclude Include="Math\AABB2D.hpp" />
+    <ClInclude Include="Math\AABB3D.hpp" />
+    <ClInclude Include="Math\Dics2D.hpp" />
+    <ClInclude Include="Math\Dics3D.hpp" />
+    <ClInclude Include="Math\EulerAngles.hpp" />
+    <ClInclude Include="Math\IntVector2.hpp" />
+    <ClInclude Include="Math\IntVector3.hpp" />
+    <ClInclude Include="Math\LineSegment2D.hpp" />
+    <ClInclude Include="Math\LineSegment3D.hpp" />
+    <ClInclude Include="Math\Math2D.hpp" />
+    <ClInclude Include="Math\Math3D.hpp" />
+    <ClInclude Include="Math\MathUtils.hpp" />
+    <ClInclude Include="Math\Matrix4x4.hpp" />
+    <ClInclude Include="Math\Noise.hpp" />
+    <ClInclude Include="Math\Vector2.hpp" />
+    <ClInclude Include="Math\Vector3.hpp" />
+    <ClInclude Include="Math\Vector4.hpp" />
+    <ClInclude Include="Memory\OverrideNew.hpp" />
+    <ClInclude Include="Memory\SignPostAllocator.hpp" />
+    <ClInclude Include="Network\BitArray.hpp" />
+    <ClInclude Include="Network\Client.hpp" />
+    <ClInclude Include="Network\NetAddress.hpp" />
+    <ClInclude Include="Network\NetConnection.hpp" />
+    <ClInclude Include="Network\NetMessage.hpp" />
+    <ClInclude Include="Network\NetPacket.hpp" />
+    <ClInclude Include="Network\NetPacketQueue.hpp" />
+    <ClInclude Include="Network\NetSession.hpp" />
+    <ClInclude Include="Network\NetSystem.hpp" />
+    <ClInclude Include="Network\Server.hpp" />
+    <ClInclude Include="Network\UDPSocket.hpp" />
+    <ClInclude Include="Physics\CollisionDetection.hpp" />
+    <ClInclude Include="Physics\ExplosionParticle.hpp" />
+    <ClInclude Include="Physics\FountainParticle.hpp" />
+    <ClInclude Include="Physics\Particle.hpp" />
+    <ClInclude Include="Physics\ParticleSystem.hpp" />
+    <ClInclude Include="Physics\SpinParticle.hpp" />
+    <ClInclude Include="Physics\StringSystem.hpp" />
+    <ClInclude Include="Physics\YoYoParticleModel.hpp" />
+    <ClInclude Include="Renderer\AnimatedTexture.hpp" />
+    <ClInclude Include="Renderer\Character.hpp" />
+    <ClInclude Include="Renderer\DebugShape.hpp" />
+    <ClInclude Include="Renderer\DebugShapeSystem.hpp" />
+    <ClInclude Include="Renderer\Fonts.hpp" />
+    <ClInclude Include="Renderer\geometry.h" />
+    <ClInclude Include="Renderer\glext.h" />
+    <ClInclude Include="Renderer\GLMaterial.hpp" />
+    <ClInclude Include="Renderer\GLMesh.hpp" />
+    <ClInclude Include="Renderer\GLMeshRenderer.hpp" />
+    <ClInclude Include="Renderer\GLShader.hpp" />
+    <ClInclude Include="Renderer\Light.hpp" />
+    <ClInclude Include="Renderer\OpenGLRenderer.hpp" />
+    <ClInclude Include="Renderer\RGBA.hpp" />
+    <ClInclude Include="Renderer\Shader.hpp" />
+    <ClInclude Include="Renderer\Texture.hpp" />
+    <ClInclude Include="Sound\Sound.hpp" />
+    <ClInclude Include="Sound\SoundSystem.hpp" />
+    <ClInclude Include="Thread\Command.hpp" />
+    <ClInclude Include="Thread\JobManager.hpp" />
+    <ClInclude Include="Thread\JobGroup.hpp" />
+    <ClInclude Include="Thread\Lock.hpp" />
+    <ClInclude Include="Thread\TextHelper.hpp" />
+    <ClInclude Include="Thread\Thread.hpp" />
+    <ClInclude Include="Thread\ThreadSafeQueue.hpp" />
+    <ClInclude Include="Time\Time.hpp" />
+    <ClInclude Include="TinyXML\tinystr.h" />
+    <ClInclude Include="TinyXML\tinyxml.h" />
+    <ClInclude Include="UI\BaseWidget.hpp" />
+    <ClInclude Include="UI\BaseWidget2.hpp" />
+    <ClInclude Include="UI\Button.hpp" />
+    <ClInclude Include="UI\Button2.hpp" />
+    <ClInclude Include="UI\CheckBox.hpp" />
+    <ClInclude Include="UI\DropdownWidget.hpp" />
+    <ClInclude Include="UI\EditableLabel.hpp" />
+    <ClInclude Include="UI\GroupWidget.hpp" />
+    <ClInclude Include="UI\Label.hpp" />
+    <ClInclude Include="UI\ProgressBar.hpp" />
+    <ClInclude Include="UI\RectButton.hpp" />
+    <ClInclude Include="UI\SliderWidget.hpp" />
+    <ClInclude Include="UI\UISystem.hpp" />
+    <ClInclude Include="UI\WidgetStyle.hpp" />
+    <ClInclude Include="Utility\BinaryBufferBuilder.hpp" />
+    <ClInclude Include="Utility\BinaryBufferParser.hpp" />
+    <ClInclude Include="Utility\BinaryFileParser.hpp" />
+    <ClInclude Include="Utility\Utility.hpp" />
+    <ClInclude Include="Utility\xmlParser.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Animation2D\Atlas2D.cpp" />
+    <ClCompile Include="Animation2D\Attachment2DLoader.cpp" />
+    <ClCompile Include="Animation2D\Skeleton2D.cpp" />
+    <ClCompile Include="Animation2D\Skeleton2DAnimation.cpp" />
+    <ClCompile Include="Animation2D\Skeleton2DData.cpp" />
+    <ClCompile Include="Animation2D\Skeleton2DLoader.cpp" />
+    <ClCompile Include="Animation2D\Spine-c\src\spine\Animation.c" />
+    <ClCompile Include="Animation2D\Spine-c\src\spine\AnimationState.c" />
+    <ClCompile Include="Animation2D\Spine-c\src\spine\AnimationStateData.c" />
+    <ClCompile Include="Animation2D\Spine-c\src\spine\Atlas.c" />
+    <ClCompile Include="Animation2D\Spine-c\src\spine\AtlasAttachmentLoader.c" />
+    <ClCompile Include="Animation2D\Spine-c\src\spine\Attachment.c" />
+    <ClCompile Include="Animation2D\Spine-c\src\spine\AttachmentLoader.c" />
+    <ClCompile Include="Animation2D\Spine-c\src\spine\Bone.c" />
+    <ClCompile Include="Animation2D\Spine-c\src\spine\BoneData.c" />
+    <ClCompile Include="Animation2D\Spine-c\src\spine\BoundingBoxAttachment.c" />
+    <ClCompile Include="Animation2D\Spine-c\src\spine\Event.c" />
+    <ClCompile Include="Animation2D\Spine-c\src\spine\EventData.c" />
+    <ClCompile Include="Animation2D\Spine-c\src\spine\extension.c" />
+    <ClCompile Include="Animation2D\Spine-c\src\spine\IkConstraint.c" />
+    <ClCompile Include="Animation2D\Spine-c\src\spine\IkConstraintData.c" />
+    <ClCompile Include="Animation2D\Spine-c\src\spine\Json.c" />
+    <ClCompile Include="Animation2D\Spine-c\src\spine\MeshAttachment.c" />
+    <ClCompile Include="Animation2D\Spine-c\src\spine\RegionAttachment.c" />
+    <ClCompile Include="Animation2D\Spine-c\src\spine\Skeleton.c" />
+    <ClCompile Include="Animation2D\Spine-c\src\spine\SkeletonBounds.c" />
+    <ClCompile Include="Animation2D\Spine-c\src\spine\SkeletonData.c" />
+    <ClCompile Include="Animation2D\Spine-c\src\spine\SkeletonJson.c" />
+    <ClCompile Include="Animation2D\Spine-c\src\spine\Skin.c" />
+    <ClCompile Include="Animation2D\Spine-c\src\spine\SkinnedMeshAttachment.c" />
+    <ClCompile Include="Animation2D\Spine-c\src\spine\Slot.c" />
+    <ClCompile Include="Animation2D\Spine-c\src\spine\SlotData.c" />
+    <ClCompile Include="Animation2D\SpineExtension.cpp" />
+    <ClCompile Include="Camera\Camera3D.cpp" />
+    <ClCompile Include="Camera\RayCast3D.cpp" />
+    <ClCompile Include="Clock\Clock.cpp" />
+    <ClCompile Include="Clock\ProfileSection.cpp" />
+    <ClCompile Include="Console\Console.cpp" />
+    <ClCompile Include="Console\console_command.cpp" />
+    <ClCompile Include="EventSystem\EventSystem.cpp" />
+    <ClCompile Include="EventSystem\KeyFrameSequence.cpp" />
+    <ClCompile Include="EventSystem\NamedProperties.cpp" />
+    <ClCompile Include="Input\InputSystem.cpp" />
+    <ClCompile Include="Math\AABB2D.cpp" />
+    <ClCompile Include="Math\AABB3D.cpp" />
+    <ClCompile Include="Math\Disc2D.cpp" />
+    <ClCompile Include="Math\Disc3D.cpp" />
+    <ClCompile Include="Math\EulerAngles.cpp" />
+    <ClCompile Include="Math\IntVector2.cpp" />
+    <ClCompile Include="Math\LineSegment2D.cpp" />
+    <ClCompile Include="Math\LineSegment3D.cpp" />
+    <ClCompile Include="Math\Math2D.cpp" />
+    <ClCompile Include="Math\Math3D.cpp" />
+    <ClCompile Include="Math\MathUtils.cpp" />
+    <ClCompile Include="Math\Matrix4x4.cpp" />
+    <ClCompile Include="Math\Noise.cpp" />
+    <ClCompile Include="Math\Vector2.cpp" />
+    <ClCompile Include="Math\Vector3.cpp" />
+    <ClCompile Include="Math\Vector4.cpp" />
+    <ClCompile Include="Memory\OverrideNew.cpp" />
+    <ClCompile Include="Memory\SignPostAllocator.cpp" />
+    <ClCompile Include="Network\BitArray.cpp" />
+    <ClCompile Include="Network\Client.cpp" />
+    <ClCompile Include="Network\NetConnection.cpp" />
+    <ClCompile Include="Network\NetMessage.cpp" />
+    <ClCompile Include="Network\NetPacket.cpp" />
+    <ClCompile Include="Network\NetPacketQueue.cpp" />
+    <ClCompile Include="Network\NetSession.cpp" />
+    <ClCompile Include="Network\NetSystem.cpp" />
+    <ClCompile Include="Network\Server.cpp" />
+    <ClCompile Include="Network\UDPSocket.cpp" />
+    <ClCompile Include="Physics\ExplosionParticle.cpp" />
+    <ClCompile Include="Physics\FountainParticle.cpp" />
+    <ClCompile Include="Physics\PariticleSystem.cpp" />
+    <ClCompile Include="Physics\Particle.cpp" />
+    <ClCompile Include="Physics\SpinParticle.cpp" />
+    <ClCompile Include="Physics\StringSystem.cpp" />
+    <ClCompile Include="Physics\YoYoParticleModel.cpp" />
+    <ClCompile Include="Renderer\AnimatedTexture.cpp" />
+    <ClCompile Include="Renderer\Character.cpp" />
+    <ClCompile Include="Renderer\DebugShape.cpp" />
+    <ClCompile Include="Renderer\DebugShapeSystem.cpp" />
+    <ClCompile Include="Renderer\Fonts.cpp" />
+    <ClCompile Include="Renderer\GLMaterial.cpp" />
+    <ClCompile Include="Renderer\GLMesh.cpp" />
+    <ClCompile Include="Renderer\GLMeshRenderer.cpp" />
+    <ClCompile Include="Renderer\GLShader.cpp" />
+    <ClCompile Include="Renderer\Light.cpp" />
+    <ClCompile Include="Renderer\OpenGLRenderer.cpp" />
+    <ClCompile Include="Renderer\RGBA.cpp" />
+    <ClCompile Include="Renderer\Shader.cpp" />
+    <ClCompile Include="Renderer\stb_image.c" />
+    <ClCompile Include="Renderer\Texture.cpp" />
+    <ClCompile Include="Sound\Sound.cpp" />
+    <ClCompile Include="Sound\SoundSystem.cpp" />
+    <ClCompile Include="Thread\Command.cpp" />
+    <ClCompile Include="Thread\JobManager.cpp" />
+    <ClCompile Include="Thread\JobGroup.cpp" />
+    <ClCompile Include="Thread\TextHelper.cpp" />
+    <ClCompile Include="Thread\Thread.cpp" />
+    <ClCompile Include="Time\Time.cpp" />
+    <ClCompile Include="TinyXML\tinystr.cpp" />
+    <ClCompile Include="TinyXML\tinyxml.cpp" />
+    <ClCompile Include="TinyXML\tinyxmlerror.cpp" />
+    <ClCompile Include="TinyXML\tinyxmlparser.cpp" />
+    <ClCompile Include="UI\BaseWidget.cpp" />
+    <ClCompile Include="UI\BaseWidget2.cpp" />
+    <ClCompile Include="UI\Button.cpp" />
+    <ClCompile Include="UI\Button2.cpp" />
+    <ClCompile Include="UI\CheckBox.cpp" />
+    <ClCompile Include="UI\DropdownWidget.cpp" />
+    <ClCompile Include="UI\EditableLabel.cpp" />
+    <ClCompile Include="UI\GroupWidget.cpp" />
+    <ClCompile Include="UI\Label.cpp" />
+    <ClCompile Include="UI\ProgressBar.cpp" />
+    <ClCompile Include="UI\RectButton.cpp" />
+    <ClCompile Include="UI\SliderWidget.cpp" />
+    <ClCompile Include="UI\UISystem.cpp" />
+    <ClCompile Include="UI\WidgetStyle.cpp" />
+    <ClCompile Include="Utility\BinaryBufferBuilder.cpp" />
+    <ClCompile Include="Utility\BinaryBufferParser.cpp" />
+    <ClCompile Include="Utility\BinaryFileParser.cpp" />
+    <ClCompile Include="Utility\Utility.cpp" />
+    <ClCompile Include="Utility\xmlParser.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
